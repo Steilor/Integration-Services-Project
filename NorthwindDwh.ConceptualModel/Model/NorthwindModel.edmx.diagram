@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="5f95474a57cd4092a2ef4ab3e1b7127a" Name="Diagram1" >
+        <EntityTypeShape EntityType="NorthwindModel.Customers" Width="1.5" PointX="1.375" PointY="3" />
+        <EntityTypeShape EntityType="NorthwindModel.Employees" Width="1.5" PointX="1.125" PointY="0.75" />
+        <EntityTypeShape EntityType="NorthwindModel.Orders" Width="1.5" PointX="3.625" PointY="0.5" />
+        <AssociationConnector Association="NorthwindModel.CustomersOrders" />
+        <AssociationConnector Association="NorthwindModel.EmployeesOrders" />
+        <EntityTypeShape EntityType="NorthwindModel.Shippers" Width="1.5" PointX="6" PointY="4" />
+        <AssociationConnector Association="NorthwindModel.ShippersOrders" />
+        <EntityTypeShape EntityType="NorthwindModel.OrderDetails" Width="1.5" PointX="6.125" PointY="0.625" />
+        <EntityTypeShape EntityType="NorthwindModel.Products" Width="1.5" PointX="8.625" PointY="0.5" />
+        <AssociationConnector Association="NorthwindModel.ProductsOrderDetails" />
+        <EntityTypeShape EntityType="NorthwindModel.Categories" Width="1.5" PointX="8.25" PointY="4" />
+        <AssociationConnector Association="NorthwindModel.CategoriesProducts" />
+        <AssociationConnector Association="NorthwindModel.OrderDetailsOrders" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
